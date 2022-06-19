@@ -51,6 +51,6 @@
 * Space complexity
 
 ### # Asymptotic notations
-* Bing-O notation
-* Theta notation
-* Omega notation
+* Bing-O notation (worst case)
+* Theta notation (Average case)
+* Omega notation (Best case)
