@@ -4,6 +4,15 @@
 
 ## # Abstract data types (ADT)
 
+## # Asymptotic Analysis / Algorithm analysis
+* Time complexity
+* Space complexity
+
+### # Asymptotic notations
+* Bing-O notation (worst case)
+* Theta notation (Average case)
+* Omega notation (Best case)
+
 ## # Data structures
 ### # Linear data structures
 * Struct
@@ -46,11 +55,4 @@
 * Divide and conquer sort
 * PHP built in sort
 
-## # Asymptotic Analysis / Algorithm analysis
-* Time complexity
-* Space complexity
-
-### # Asymptotic notations
-* Bing-O notation (worst case)
-* Theta notation (Average case)
-* Omega notation (Best case)
+### # Standard PHP Library (SPL) data structures and algorithms
