@@ -45,3 +45,12 @@
 * Bucket sort
 * Divide and conquer sort
 * PHP built in sort
+
+## # Asymptotic Analysis / Algorithm analysis
+* Time complexity
+* Space complexity
+
+### # Asymptotic notations
+* Bing-O notation
+* Theta notation
+* Omega notation
