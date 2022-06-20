@@ -9,7 +9,7 @@
 * Space complexity
 
 ### # Asymptotic notations
-* Bing-O notation - $\Omicron$ (worst case)
+* Bing-O notation - $O$ (worst case)
 * Theta notation - $\Theta$ (Average case)
 * Omega notation - $\Omega$ (Best case)
 
