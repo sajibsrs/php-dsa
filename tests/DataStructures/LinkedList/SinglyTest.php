@@ -7,7 +7,7 @@ use Sajibsrs\DataStructures\LinkedList\Singly;
  * @covers \Sajibsrs\DataStructures\LinkedList\Singly
  * @covers \Sajibsrs\DataStructures\LinkedList\SinglyNode
  */
-class LinkedListTest extends TestCase
+class SinglyTest extends TestCase
 {
     private Singly $list;
 
