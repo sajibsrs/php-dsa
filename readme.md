@@ -33,6 +33,7 @@
   * N-ary tree
 * Graph
 * Heap
+* Trie
 
 ## # Algorithms
 ### # Search algorithms
