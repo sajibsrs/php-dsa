@@ -9,7 +9,7 @@ class SinglyNode
     public $data = null;
     public ?SinglyNode $nextNode = null;
 
-    public function __construct(string $data = null)
+    public function __construct($data)
     {
         $this->data = $data;
     }
