@@ -11,7 +11,7 @@ class Singly
 {
     public SinglyNode $firstNode;
 
-    public function __construct(string $data)
+    public function __construct($data)
     {
         $this->firstNode = new SinglyNode($data);
     }
@@ -19,7 +19,7 @@ class Singly
     /**
      * Insert at the beginning.
      */
-    public function insert(string $data): bool
+    public function insert($data): bool
     {
         $newNode = new SinglyNode($data);
         $newNode->nextNode = $this->firstNode;
@@ -31,7 +31,7 @@ class Singly
     /**
      * Add to a specific position of the list.
      */
-    public function add(int $index, string $data): bool
+    public function add(int $index, $data): bool
     {
         $newNode = new SinglyNode($data);
 
@@ -77,7 +77,7 @@ class Singly
     /**
      * Search for item. Returns found item or false on failure.
      */
-    public function search(string $data)
+    public function search($data)
     {
         $currentNode = $this->firstNode;
         $currentIndex = 0;
