@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajibsrs\DataStructures\LinkedList;
+namespace Sajibsrs\DataStructure\LinkedList;
 
 class SinglyNode
 {

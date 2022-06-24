@@ -1,11 +1,11 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Sajibsrs\DataStructures\LinkedList\Doubly;
+use Sajibsrs\DataStructure\LinkedList\Doubly;
 
 /**
- * @covers \Sajibsrs\DataStructures\LinkedList\Doubly
- * @covers \Sajibsrs\DataStructures\LinkedList\DoublyNode
+ * @covers \Sajibsrs\DataStructure\LinkedList\Doubly
+ * @covers \Sajibsrs\DataStructure\LinkedList\DoublyNode
  */
 final class DoublyTest extends TestCase
 {

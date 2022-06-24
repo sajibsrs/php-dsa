@@ -1,11 +1,11 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Sajibsrs\DataStructures\LinkedList\Singly;
+use Sajibsrs\DataStructure\LinkedList\Singly;
 
 /**
- * @covers \Sajibsrs\DataStructures\LinkedList\Singly
- * @covers \Sajibsrs\DataStructures\LinkedList\SinglyNode
+ * @covers \Sajibsrs\DataStructure\LinkedList\Singly
+ * @covers \Sajibsrs\DataStructure\LinkedList\SinglyNode
  */
 final class SinglyTest extends TestCase
 {
