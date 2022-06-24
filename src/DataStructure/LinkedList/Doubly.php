@@ -9,7 +9,7 @@ class Doubly
     public ?DoublyNode $firstNode = null;
     public ?DoublyNode $lastNode = null;
 
-    public function __construct($data)
+    public function __construct($data = null)
     {   
         $newNode = new DoublyNode($data);
         $this->firstNode = $newNode;
