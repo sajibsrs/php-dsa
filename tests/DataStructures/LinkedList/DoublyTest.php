@@ -13,64 +13,62 @@ final class DoublyTest extends TestCase
 
     public function setUp(): void
     {
-        $this->list = new Doubly('🥝');
+        $this->list = new Doubly();
     }
 
-    public function testListShouldNotBeEmpty(): void
+    public function testListShouldBeEmpty(): void
     {
-        $this->expectOutputString('🥝');
-
-        $this->assertNotEmpty($this->list);
-        
-        print($this->list->firstNode->data);
+        $this->assertEmpty($this->list->firstNode);
     }
 
     public function testShouldInsertAtStart(): void
     {
-        $this->expectOutputString('🍑🥝');
-
         $this->list->insertAtStart('🍑');
-
+        
         print($this->list->firstNode->data);
-        print($this->list->lastNode->data);
+
+        $this->expectOutputString('🍑');
     }
 
     public function testShouldInsertAtEnd(): void
     {
-        $this->expectOutputString('🥝🍑');
+        $this->list->insertAtStart('🍑');
+        $this->list->insertAtEnd('🥝');
         
-        $this->list->insertAtEnd('🍑');
-
-        print($this->list->firstNode->data);
         print($this->list->lastNode->data);
+        
+        $this->expectOutputString('🥝');
     }
 
     public function testShouldDisplayNextNodeData(): void
     {
-        $this->expectOutputString('🍑');
-        
+        $this->list->insertAtEnd('🥝');
         $this->list->insertAtEnd('🍑');
-
+        
         print($this->list->firstNode->nextNode->data);
+
+        $this->expectOutputString('🍑');
     }
 
     public function testShouldDisplayPreviousNodeData(): void
     {
-        $this->expectOutputString('🥝');
-        
+        $this->list->insertAtEnd('🥝');
         $this->list->insertAtEnd('🍑');
 
+        $this->expectOutputString('🥝');
+        
         print($this->list->lastNode->previousNode->data);
     }
 
     public function testShouldDeleteFromStart(): void
     {
-        $this->expectOutputString('🍑');
-
+        $this->list->insertAtEnd('🥝');
         $this->list->insertAtEnd('🍑');
         $this->list->deleteFromStart();
-
+        
         print($this->list->firstNode->data);
+
+        $this->expectOutputString('🍑');
     }
 
     public function tearDown(): void
