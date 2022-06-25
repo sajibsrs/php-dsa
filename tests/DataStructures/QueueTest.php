@@ -47,6 +47,13 @@ final class QueueTest extends TestCase
         $this->assertSame('🥝', $firstNode->data);
     }
 
+    public function testReadShouldFail(): void
+    {
+        $firstNode = $this->queue->read();
+
+        $this->assertEmpty($firstNode);
+    }
+
     public function tearDown(): void
     {
         unset($this->queue);
