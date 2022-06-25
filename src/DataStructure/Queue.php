@@ -8,7 +8,6 @@ use Sajibsrs\DataStructure\LinkedList\Doubly as DoublyLinkedList;
 
 class Queue
 {
-    public $queue;
     public $data;
 
     public function __construct()
@@ -26,7 +25,7 @@ class Queue
         $removedNode = $this->data->deleteFromStart();
         return $removedNode;
     }
-
+    
     public function read()
     {
         return $this->data->firstNode ?: null;
