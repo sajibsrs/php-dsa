@@ -29,8 +29,8 @@
   * Binary tree
   * Binary search tree
   * Self-balanced tree
-  * B-tree
-  * N-ary tree
+    * B-tree
+    * N-ary tree
 * Graph
 * Heap
 * Trie
