@@ -1,10 +1,10 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Sajibsrs\DataStructure\Queue;
+use Sajibsrs\DataStructure\LinkedList\Queue;
 
 /**
- * @covers \Sajibsrs\DataStructure\Queue
+ * @covers \Sajibsrs\DataStructure\LinkedList\Queue
  * @covers \Sajibsrs\DataStructure\LinkedList\Doubly
  * @covers \Sajibsrs\DataStructure\LinkedList\DoublyNode
  */
