@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Sajibsrs\DataStructure\LinkedList;
 
-class Doubly
+class DoublyLinkedList
 {
     public ?DoublyNode $firstNode = null;
     public ?DoublyNode $lastNode = null;

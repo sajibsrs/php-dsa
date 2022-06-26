@@ -1,19 +1,19 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Sajibsrs\DataStructure\LinkedList\Doubly;
+use Sajibsrs\DataStructure\LinkedList\DoublyLinkedList;
 
 /**
- * @covers \Sajibsrs\DataStructure\LinkedList\Doubly
+ * @covers \Sajibsrs\DataStructure\LinkedList\DoublyLinkedList
  * @covers \Sajibsrs\DataStructure\LinkedList\DoublyNode
  */
 final class DoublyTest extends TestCase
 {
-    public Doubly $list;
+    public DoublyLinkedList $list;
 
     public function setUp(): void
     {
-        $this->list = new Doubly();
+        $this->list = new DoublyLinkedList();
     }
 
     public function testListShouldBeEmpty(): void

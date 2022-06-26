@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Sajibsrs\DataStructure\LinkedList;
 
 /**
- * Singly linked list.
+ * SinglyLinkedList linked list.
  */
-class Singly
+class SinglyLinkedList
 {
     public SinglyNode $firstNode;
 

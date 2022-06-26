@@ -1,19 +1,19 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Sajibsrs\DataStructure\LinkedList\Singly;
+use Sajibsrs\DataStructure\LinkedList\SinglyLinkedList;
 
 /**
- * @covers \Sajibsrs\DataStructure\LinkedList\Singly
+ * @covers \Sajibsrs\DataStructure\LinkedList\SinglyLinkedList
  * @covers \Sajibsrs\DataStructure\LinkedList\SinglyNode
  */
 final class SinglyTest extends TestCase
 {
-    private Singly $list;
+    private SinglyLinkedList $list;
 
     public function setUp(): void
     {
-        $this->list = new Singly('🥝');
+        $this->list = new SinglyLinkedList('🥝');
     }
 
     public function testShouldNotBeEmpty(): void
