@@ -55,4 +55,13 @@
 * Divide and conquer sort
 * PHP built in sort
 
-### # Standard PHP Library (SPL) data structures and algorithms
+### # Standard PHP Library (SPL) data structures
+* SplDoublyLinkedList
+* SplStack
+* SplQueue
+* SplHeap
+* SplMaxHeap
+* SplMinHeap
+* SplPriorityQueue
+* SplFixedArray
+* SplObjectStorage
