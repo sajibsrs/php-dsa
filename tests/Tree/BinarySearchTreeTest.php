@@ -2,6 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 use Sajibsrs\DataStructure\Tree\BinarySearchTree;
+use Sajibsrs\DataStructure\Tree\TreeNode;
 
 /**
  * @covers \Sajibsrs\DataStructure\Tree\BinarySearchTree
@@ -13,7 +14,8 @@ final class BinarySearchTreeTest extends TestCase
 
     public function setUp(): void
     {
-        $this->tree = new BinarySearchTree(50);
+        $node = new TreeNode(50);
+        $this->tree = new BinarySearchTree($node);
     }
 
     public function testShouldHaveTreeRootValue(): void
