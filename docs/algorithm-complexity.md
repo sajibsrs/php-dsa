@@ -9,3 +9,9 @@ Time complexity signifies the total time required by the program to run till its
 **For example:** In a linear search algorithm one step required for each element. If we have 10 elements, a linear search could take 10 steps to find one specific element if it's the last element of the array. That is just a worst case, we can get that element in the first step if that element is the first element of the array.
 
 ## # Space complexity
+Space complexity specifies the amount of memory used by the algorithm (including the input values of the algorithm) to execute and produce the result. Space complexity relies on two factor:
+
+1. Input space: Space used by algorithm input.
+2. Auxiliary space: Additional space used by the algorithm (e.g. variables).
+
+**Space complexity = Input space + Auxiliary space**.
