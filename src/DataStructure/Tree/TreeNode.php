@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Sajibsrs\DataStructure\Tree;
 
-class Node
+class TreeNode
 {
     public $value = null;
-    public ?Node $left;
-    public ?Node $right;
+    public ?TreeNode $left;
+    public ?TreeNode $right;
 
-    public function __construct($value, ?Node $left = null, ?Node $right = null)
+    public function __construct($value, ?TreeNode $left = null, ?TreeNode $right = null)
     {
         $this->value = $value;
         $this->left = $left;
