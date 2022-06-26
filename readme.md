@@ -5,7 +5,7 @@
 ## # Abstract data types (ADT)
 
 ## # Asymptotic Analysis / Algorithm analysis
-* [Algorithm complexity](docs/algorithm-complexity.md)
+* [Algorithmic complexity](docs/algorithm-complexity.md)
 * [Time complexity](docs/algorithm-complexity.md#-time-complexity)
 * [Space complexity](docs/algorithm-complexity.md#-space-complexity)
 
