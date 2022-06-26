@@ -10,7 +10,7 @@ class Node
     public ?Node $left;
     public ?Node $right;
 
-    public function __construct($value, Node $left = null, Node $right = null)
+    public function __construct($value, ?Node $left = null, ?Node $right = null)
     {
         $this->value = $value;
         $this->left = $left;
