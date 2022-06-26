@@ -10,9 +10,9 @@ class BinarySearchTree
 {
     public TreeNode $root;
 
-    public function __construct(int $value)
+    public function __construct(TreeNode $node)
     {
-        $this->root = new TreeNode($value);
+        $this->root = $node;
     }
     
     public function insert(int $value, ?TreeNode $node = null)
