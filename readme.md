@@ -9,9 +9,9 @@
 * Space complexity
 
 ### # Asymptotic notations
-* Big-O notation - $O$ (worst case)
-* Theta notation - $\Theta$ (Average case)
-* Omega notation - $\Omega$ (Best case)
+* Big-O notation - $O$ (worst case / upper bound)
+* Big-theta notation - $\Theta$ (Average case / tight bound)
+* Big-omega notation - $\Omega$ (Best case / lower bound)
 
 ## # Data structures
 ### # Linear data structures
