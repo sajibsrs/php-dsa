@@ -5,8 +5,9 @@
 ## # Abstract data types (ADT)
 
 ## # Asymptotic Analysis / Algorithm analysis
-* Time complexity
-* Space complexity
+* [Algorithm complexity](docs/algorithm-complexity.md)
+* [Time complexity](docs/algorithm-complexity.md#-time-complexity)
+* [Space complexity](docs/algorithm-complexity.md#-space-complexity)
 
 ### # Asymptotic notations
 * Big-O notation - $O$ (worst case / upper bound)
