@@ -28,12 +28,24 @@ final class SinglyTest extends TestCase
         $this->assertTrue($result);
     }
 
-    public function testShouldSearchAndReadItem(): void
+    public function testShouldSearchItem(): void
+    {
+        $this->list->insert('🍑');
+        $this->list->insert('🥝');
+
+        $this->assertSame(1, $this->list->search('🍑'));
+    }
+
+    public function testSearchShouldFail(): void
     {
         $this->list->insert('🥝');
-        $this->list->insert('🍑');
 
-        $this->assertNotFalse($this->list->search('🍑'));
+        $this->assertEmpty($this->list->search('🍑'));
+    }
+
+    public function testReadOutOfRangeShouldFail(): void
+    {
+        $this->assertFalse($this->list->read(1));
     }
 
     public function testShouldReadItem(): void
@@ -46,21 +58,22 @@ final class SinglyTest extends TestCase
 
     public function testShouldDisplayItems(): void
     {
-        $this->list->insert('🥝');
-        $this->list->add(1, '🍑');
+        $this->list->insert('🍑');
+        $this->list->add(2, '🥝');
+        $this->list->add(0, '🍑');
         $this->list->display();
 
-        $this->expectOutputString('🥝🍑🥝');
+        $this->expectOutputString('🍑🍑🥝🥝');
     }
 
     public function testShouldDeleteItem(): void
     {
         $this->list->insert('🍑');
-        $this->list->insert('🥝');
         $this->list->insert('🍑');
         $this->list->insert('🥝');
+        $this->list->insert('🥝');
 
-        $this->list->delete(1);
+        $this->list->delete(2);
         $this->list->delete(0);
         
         $this->list->display();
