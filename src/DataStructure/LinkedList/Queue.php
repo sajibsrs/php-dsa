@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajibsrs\DataStructure;
+namespace Sajibsrs\DataStructure\LinkedList;
 
 use Sajibsrs\DataStructure\LinkedList\Doubly as DoublyLinkedList;
 
