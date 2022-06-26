@@ -6,11 +6,11 @@ namespace Sajibsrs\DataStructure\Tree;
 
 class TreeNode
 {
-    public $value = null;
+    public int $value;
     public ?TreeNode $left;
     public ?TreeNode $right;
 
-    public function __construct($value, ?TreeNode $left = null, ?TreeNode $right = null)
+    public function __construct(int $value, ?TreeNode $left = null, ?TreeNode $right = null)
     {
         $this->value = $value;
         $this->left = $left;
