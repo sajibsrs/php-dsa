@@ -30,6 +30,16 @@ final class DoublyTest extends TestCase
         $this->expectOutputString('🍑');
     }
 
+    public function testShouldInsertAtStartWhenListHasItems(): void
+    {
+        $this->list->insertAtStart('🥝');
+        $this->list->insertAtStart('🍑');
+        
+        print($this->list->firstNode->data);
+
+        $this->expectOutputString('🍑');
+    }
+
     public function testShouldInsertAtEnd(): void
     {
         $this->list->insertAtStart('🍑');
