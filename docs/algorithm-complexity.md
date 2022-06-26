@@ -6,4 +6,6 @@ To measure or compare algorithms there are two terms, algorithm **time complexit
 ## # Time complexity
 Time complexity signifies the total time required by the program to run till its completion. By time we are not talking about the real world clock time, rather the number of steps or CPU instructions it takes to complete.
 
+**For example:** In a linear search algorithm one step required for each element. If we have 10 elements, a linear search could take 10 steps to find one specific element if it's the last element of the array. That is just a worst case, we can get that element in the first step if that element is the first element of the array.
+
 ## # Space complexity
