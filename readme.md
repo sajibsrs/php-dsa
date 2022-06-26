@@ -15,7 +15,6 @@
 
 ## # Data structures
 ### # Linear data structures
-* Struct
 * Array
 * Stack
 * Queue
