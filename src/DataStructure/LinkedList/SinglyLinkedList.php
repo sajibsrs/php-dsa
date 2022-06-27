@@ -48,6 +48,7 @@ class SinglyLinkedList
             $currentNode = $currentNode->nextNode;
             $currentIndex++;
         }
+
         $newNode->nextNode = $currentNode->nextNode;
         $currentNode->nextNode = $newNode;
 
@@ -71,6 +72,7 @@ class SinglyLinkedList
 
             $currentIndex++;
         }
+
         return $currentNode;
     }
 
@@ -86,6 +88,7 @@ class SinglyLinkedList
             if ($currentNode->data === $data) {
                 return $currentIndex;
             }
+
             $currentNode = $currentNode->nextNode;
             $currentIndex++;
         }
@@ -102,6 +105,7 @@ class SinglyLinkedList
             $this->firstNode = $this->firstNode->nextNode;
             return;
         }
+
         $currentNode = $this->firstNode;
         $currentIndex = 0;
 
@@ -109,6 +113,7 @@ class SinglyLinkedList
             $currentNode = $currentNode->nextNode;
             $currentIndex++;
         }
+
         $nodeAfterDeleted = $currentNode->nextNode->nextNode;
         $currentNode->nextNode = $nodeAfterDeleted;
     }
@@ -122,6 +127,7 @@ class SinglyLinkedList
 
         while ($currentNode !== null) {
             echo $currentNode->data;
+
             $currentNode = $currentNode->nextNode;
         }
     }
