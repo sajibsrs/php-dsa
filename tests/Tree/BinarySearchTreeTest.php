@@ -57,6 +57,16 @@ final class BinarySearchTreeTest extends TestCase
         $this->assertSame(85, $this->tree->root->right->right->value);
     }
 
+    public function testShouldSearchAndFindTheValue(): void
+    {
+        $this->tree->insert(25);
+        $this->tree->insert(15);
+        $this->tree->insert(75);
+        $this->tree->insert(85);
+
+        $this->assertTrue($this->tree->search(25));
+    }
+
     public function tearDown(): void
     {
         unset($this->tree);
