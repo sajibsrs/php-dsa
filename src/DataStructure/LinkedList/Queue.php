@@ -31,7 +31,7 @@ class Queue
         $removedNode = $this->data->deleteFromStart();
         return $removedNode;
     }
-    
+
     /**
      * Read data from the front of the queue.
      */

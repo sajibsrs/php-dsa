@@ -112,7 +112,7 @@ class SinglyLinkedList
         $nodeAfterDeleted = $currentNode->nextNode->nextNode;
         $currentNode->nextNode = $nodeAfterDeleted;
     }
-    
+
     /**
      * Echo the items of the list.
      */

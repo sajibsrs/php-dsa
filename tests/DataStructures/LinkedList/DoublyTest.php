@@ -24,7 +24,7 @@ final class DoublyTest extends TestCase
     public function testShouldInsertAtStart(): void
     {
         $this->list->insertAtStart('🍑');
-        
+
         print($this->list->firstNode->data);
 
         $this->expectOutputString('🍑');
@@ -34,7 +34,7 @@ final class DoublyTest extends TestCase
     {
         $this->list->insertAtStart('🥝');
         $this->list->insertAtStart('🍑');
-        
+
         print($this->list->firstNode->data);
 
         $this->expectOutputString('🍑');
@@ -44,9 +44,9 @@ final class DoublyTest extends TestCase
     {
         $this->list->insertAtStart('🍑');
         $this->list->insertAtEnd('🥝');
-        
+
         print($this->list->lastNode->data);
-        
+
         $this->expectOutputString('🥝');
     }
 
@@ -54,7 +54,7 @@ final class DoublyTest extends TestCase
     {
         $this->list->insertAtEnd('🥝');
         $this->list->insertAtEnd('🍑');
-        
+
         print($this->list->firstNode->nextNode->data);
 
         $this->expectOutputString('🍑');
@@ -66,7 +66,7 @@ final class DoublyTest extends TestCase
         $this->list->insertAtEnd('🍑');
 
         $this->expectOutputString('🥝');
-        
+
         print($this->list->lastNode->previousNode->data);
     }
 
@@ -75,7 +75,7 @@ final class DoublyTest extends TestCase
         $this->list->insertAtEnd('🥝');
         $this->list->insertAtEnd('🍑');
         $this->list->deleteFromStart();
-        
+
         print($this->list->firstNode->data);
 
         $this->expectOutputString('🍑');

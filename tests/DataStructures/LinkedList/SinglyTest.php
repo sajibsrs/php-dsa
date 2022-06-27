@@ -75,7 +75,7 @@ final class SinglyTest extends TestCase
 
         $this->list->delete(2);
         $this->list->delete(0);
-        
+
         $this->list->display();
 
         $this->expectOutputString('🥝🍑🥝');

@@ -11,7 +11,7 @@ use Sajibsrs\DataStructure\LinkedList\Queue;
 final class QueueTest extends TestCase
 {
     private Queue $queue;
-    
+
     public function setUp(): void
     {
         $this->queue = new Queue();
@@ -32,9 +32,9 @@ final class QueueTest extends TestCase
         $this->queue->enqueue('🍑');
 
         $removedNode = $this->queue->dequeue();
-        
+
         print $this->queue->data->lastNode->data;
-        
+
         $this->expectOutputString('🍑');
         $this->assertEquals('🥝', $removedNode->data);
     }
