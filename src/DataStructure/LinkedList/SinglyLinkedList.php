@@ -38,6 +38,7 @@ class SinglyLinkedList
         if ($index === 0) {
             $newNode->nextNode = $this->firstNode;
             $this->firstNode = $newNode;
+
             return true;
         }
 

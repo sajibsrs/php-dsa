@@ -29,6 +29,7 @@ class Queue
     public function dequeue()
     {
         $removedNode = $this->data->deleteFromStart();
+
         return $removedNode;
     }
 
